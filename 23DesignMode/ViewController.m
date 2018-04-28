@@ -17,6 +17,9 @@
 #import "MagicFireAttack.h"
 #import "LightningAttack.h"
 #import "WRReadingViewController.h"
+#import "CustomTextField.h"
+#import "NumericInputValidator.h"
+#import "AlphaInputValidator.h"
 @interface ViewController ()
 
 @end
@@ -27,14 +30,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     /*
+     //抽象工厂模式
     HondaFactory* HF = [HondaFactory AccordHondaFactory];
     [HF produceWheel];
     
+     //建造者模式
     CarBuilder *carBuilder = [[SuvCarBuilder alloc]init];
     CarDirector * carDirector = [[CarDirector alloc]init];
     Car* chinaSuv = [carDirector createChinaSuv:carBuilder];
     Car* JapanSuv = [carDirector createJapanSuv:carBuilder];
     
+     //责任链模式
     //创建新的人物
     //加装护甲
     AttackHandler *avatar = [[Avator alloc] init];
@@ -50,17 +56,24 @@
     Attack *lightningAttack = [[LightningAttack alloc]init];
     [superAvatar handleAttack:lightningAttack];
     */
-   
-
     
+   /*
+    //中介者模式
     WRReadingViewController * vc = [[WRReadingViewController alloc]init];
-//     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
-//       nav.navigationBarHidden = NO;
-//    [self presentViewController:nav animated:YES completion:nil];
-   //[self pushViewController:nav animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
+    */
+    
+    //策略模式
+    CustomTextField * tf = [[CustomTextField alloc]init];
+    tf.inputValidator = [[NumericInputValidator alloc]init];//添加策略验证必须输入数字
+    
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    if ([textField isKindOfClass:[CustomTextField class]]) {
+        [(CustomTextField*)textField validate];//验证是否符合规则
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

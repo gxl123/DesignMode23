@@ -28,6 +28,10 @@
 		C81CD5822089816C00308D99 /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5812089816C00308D99 /* SwordAttack.m */; };
 		C81CD5852089818100308D99 /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5842089818100308D99 /* MagicFireAttack.m */; };
 		C81CD5882089819B00308D99 /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5872089819B00308D99 /* LightningAttack.m */; };
+		C85493DE20945C6D0092A79C /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493DD20945C6D0092A79C /* InputValidator.m */; };
+		C85493E120945C920092A79C /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E020945C920092A79C /* NumericInputValidator.m */; };
+		C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E320945CAC0092A79C /* AlphaInputValidator.m */; };
+		C85493E720945CD50092A79C /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E620945CD50092A79C /* CustomTextField.m */; };
 		C85641BE208F1498004D0496 /* WRReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641BD208F1498004D0496 /* WRReadingViewController.m */; };
 		C85641C1208F14B8004D0496 /* WRReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641C0208F14B8004D0496 /* WRReviewViewController.m */; };
 		C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641C3208F14C9004D0496 /* WRBookDetailViewController.m */; };
@@ -76,6 +80,14 @@
 		C81CD5842089818100308D99 /* MagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
 		C81CD5862089819B00308D99 /* LightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
 		C81CD5872089819B00308D99 /* LightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		C85493DC20945C6D0092A79C /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		C85493DD20945C6D0092A79C /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		C85493DF20945C920092A79C /* NumericInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
+		C85493E020945C920092A79C /* NumericInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumericInputValidator.m; sourceTree = "<group>"; };
+		C85493E220945CAC0092A79C /* AlphaInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		C85493E320945CAC0092A79C /* AlphaInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
+		C85493E520945CD50092A79C /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		C85493E620945CD50092A79C /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 		C85641BC208F1498004D0496 /* WRReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRReadingViewController.h; sourceTree = "<group>"; };
 		C85641BD208F1498004D0496 /* WRReadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRReadingViewController.m; sourceTree = "<group>"; };
 		C85641BF208F14B8004D0496 /* WRReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRReviewViewController.h; sourceTree = "<group>"; };
@@ -118,6 +130,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C85493DB20945C390092A79C /* 策略 */,
 				C85641BB208F1209004D0496 /* 中介者 */,
 				C81CD56D20897ED000308D99 /* 责任链 */,
 				C8135BD320889583002D3D26 /* 抽象工厂 */,
@@ -184,6 +197,21 @@
 				C81CD5872089819B00308D99 /* LightningAttack.m */,
 			);
 			path = "责任链";
+			sourceTree = "<group>";
+		};
+		C85493DB20945C390092A79C /* 策略 */ = {
+			isa = PBXGroup;
+			children = (
+				C85493DC20945C6D0092A79C /* InputValidator.h */,
+				C85493DD20945C6D0092A79C /* InputValidator.m */,
+				C85493DF20945C920092A79C /* NumericInputValidator.h */,
+				C85493E020945C920092A79C /* NumericInputValidator.m */,
+				C85493E220945CAC0092A79C /* AlphaInputValidator.h */,
+				C85493E320945CAC0092A79C /* AlphaInputValidator.m */,
+				C85493E520945CD50092A79C /* CustomTextField.h */,
+				C85493E620945CD50092A79C /* CustomTextField.m */,
+			);
+			path = "策略";
 			sourceTree = "<group>";
 		};
 		C85641BB208F1209004D0496 /* 中介者 */ = {
@@ -274,11 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8135BAD20887941002D3D26 /* ViewController.m in Sources */,
+				C85493DE20945C6D0092A79C /* InputValidator.m in Sources */,
 				C85641C1208F14B8004D0496 /* WRReviewViewController.m in Sources */,
 				C8135BE420889583002D3D26 /* FitHondaFactory.m in Sources */,
 				C8135BE320889583002D3D26 /* AccordHondaFactory.m in Sources */,
 				C81CD5732089803000308D99 /* AttackHandler.m in Sources */,
 				C8135BE820889583002D3D26 /* CarDirector.m in Sources */,
+				C85493E120945C920092A79C /* NumericInputValidator.m in Sources */,
+				C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */,
 				C85641CA208F214B004D0496 /* BookDetailComponent.m in Sources */,
 				C81CD5762089804F00308D99 /* MetalArmor.m in Sources */,
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
@@ -295,6 +326,7 @@
 				C81CD5852089818100308D99 /* MagicFireAttack.m in Sources */,
 				C8135BE520889583002D3D26 /* HondaFactory.m in Sources */,
 				C81CD5822089816C00308D99 /* SwordAttack.m in Sources */,
+				C85493E720945CD50092A79C /* CustomTextField.m in Sources */,
 				C85641BE208F1498004D0496 /* WRReadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
