@@ -28,6 +28,13 @@
 		C81CD5822089816C00308D99 /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5812089816C00308D99 /* SwordAttack.m */; };
 		C81CD5852089818100308D99 /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5842089818100308D99 /* MagicFireAttack.m */; };
 		C81CD5882089819B00308D99 /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5872089819B00308D99 /* LightningAttack.m */; };
+		C8399C1E209FF616003D6F86 /* Model2.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C1D209FF616003D6F86 /* Model2.m */; };
+		C8399C21209FF64A003D6F86 /* Model2Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C20209FF64A003D6F86 /* Model2Adapter.m */; };
+		C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C23209FF6D2003D6F86 /* ModelAdapter.m */; };
+		C8399C2A209FF7E1003D6F86 /* Model1Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C29209FF7E1003D6F86 /* Model1Adapter.m */; };
+		C8399C2D209FF9D6003D6F86 /* Model1.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C2C209FF9D6003D6F86 /* Model1.m */; };
+		C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C2F209FFDB7003D6F86 /* ContentView.m */; };
+		C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C3320A00027003D6F86 /* ContentViewAdapter.m */; };
 		C85493DE20945C6D0092A79C /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493DD20945C6D0092A79C /* InputValidator.m */; };
 		C85493E120945C920092A79C /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E020945C920092A79C /* NumericInputValidator.m */; };
 		C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E320945CAC0092A79C /* AlphaInputValidator.m */; };
@@ -80,6 +87,21 @@
 		C81CD5842089818100308D99 /* MagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
 		C81CD5862089819B00308D99 /* LightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
 		C81CD5872089819B00308D99 /* LightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		C8399C1B209FF569003D6F86 /* ContentViewAdapterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewAdapterProtocol.h; sourceTree = "<group>"; };
+		C8399C1C209FF616003D6F86 /* Model2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model2.h; sourceTree = "<group>"; };
+		C8399C1D209FF616003D6F86 /* Model2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model2.m; sourceTree = "<group>"; };
+		C8399C1F209FF64A003D6F86 /* Model2Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model2Adapter.h; sourceTree = "<group>"; };
+		C8399C20209FF64A003D6F86 /* Model2Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model2Adapter.m; sourceTree = "<group>"; };
+		C8399C22209FF6D2003D6F86 /* ModelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelAdapter.h; sourceTree = "<group>"; };
+		C8399C23209FF6D2003D6F86 /* ModelAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelAdapter.m; sourceTree = "<group>"; };
+		C8399C28209FF7E1003D6F86 /* Model1Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model1Adapter.h; sourceTree = "<group>"; };
+		C8399C29209FF7E1003D6F86 /* Model1Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model1Adapter.m; sourceTree = "<group>"; };
+		C8399C2B209FF9D6003D6F86 /* Model1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model1.h; sourceTree = "<group>"; };
+		C8399C2C209FF9D6003D6F86 /* Model1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model1.m; sourceTree = "<group>"; };
+		C8399C2E209FFDB7003D6F86 /* ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentView.h; sourceTree = "<group>"; };
+		C8399C2F209FFDB7003D6F86 /* ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
+		C8399C3220A00027003D6F86 /* ContentViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewAdapter.h; sourceTree = "<group>"; };
+		C8399C3320A00027003D6F86 /* ContentViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewAdapter.m; sourceTree = "<group>"; };
 		C85493DC20945C6D0092A79C /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
 		C85493DD20945C6D0092A79C /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
 		C85493DF20945C920092A79C /* NumericInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
@@ -130,6 +152,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C8399C1A209FF52A003D6F86 /* 适配器 */,
 				C85493DB20945C390092A79C /* 策略 */,
 				C85641BB208F1209004D0496 /* 中介者 */,
 				C81CD56D20897ED000308D99 /* 责任链 */,
@@ -197,6 +220,36 @@
 				C81CD5872089819B00308D99 /* LightningAttack.m */,
 			);
 			path = "责任链";
+			sourceTree = "<group>";
+		};
+		C8399C1A209FF52A003D6F86 /* 适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				C8399C31209FFFCA003D6F86 /* ContentView */,
+				C8399C22209FF6D2003D6F86 /* ModelAdapter.h */,
+				C8399C23209FF6D2003D6F86 /* ModelAdapter.m */,
+				C8399C28209FF7E1003D6F86 /* Model1Adapter.h */,
+				C8399C29209FF7E1003D6F86 /* Model1Adapter.m */,
+				C8399C2B209FF9D6003D6F86 /* Model1.h */,
+				C8399C2C209FF9D6003D6F86 /* Model1.m */,
+				C8399C1F209FF64A003D6F86 /* Model2Adapter.h */,
+				C8399C20209FF64A003D6F86 /* Model2Adapter.m */,
+				C8399C1C209FF616003D6F86 /* Model2.h */,
+				C8399C1D209FF616003D6F86 /* Model2.m */,
+			);
+			path = "适配器";
+			sourceTree = "<group>";
+		};
+		C8399C31209FFFCA003D6F86 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				C8399C1B209FF569003D6F86 /* ContentViewAdapterProtocol.h */,
+				C8399C3220A00027003D6F86 /* ContentViewAdapter.h */,
+				C8399C3320A00027003D6F86 /* ContentViewAdapter.m */,
+				C8399C2E209FFDB7003D6F86 /* ContentView.h */,
+				C8399C2F209FFDB7003D6F86 /* ContentView.m */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 		C85493DB20945C390092A79C /* 策略 */ = {
@@ -301,18 +354,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8399C2D209FF9D6003D6F86 /* Model1.m in Sources */,
 				C8135BAD20887941002D3D26 /* ViewController.m in Sources */,
 				C85493DE20945C6D0092A79C /* InputValidator.m in Sources */,
+				C8399C1E209FF616003D6F86 /* Model2.m in Sources */,
 				C85641C1208F14B8004D0496 /* WRReviewViewController.m in Sources */,
 				C8135BE420889583002D3D26 /* FitHondaFactory.m in Sources */,
 				C8135BE320889583002D3D26 /* AccordHondaFactory.m in Sources */,
 				C81CD5732089803000308D99 /* AttackHandler.m in Sources */,
 				C8135BE820889583002D3D26 /* CarDirector.m in Sources */,
 				C85493E120945C920092A79C /* NumericInputValidator.m in Sources */,
+				C8399C21209FF64A003D6F86 /* Model2Adapter.m in Sources */,
 				C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */,
 				C85641CA208F214B004D0496 /* BookDetailComponent.m in Sources */,
 				C81CD5762089804F00308D99 /* MetalArmor.m in Sources */,
+				C8399C2A209FF7E1003D6F86 /* Model1Adapter.m in Sources */,
+				C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */,
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
+				C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */,
+				C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */,
 				C8135BB820887944002D3D26 /* main.m in Sources */,
 				C81CD5882089819B00308D99 /* LightningAttack.m in Sources */,
 				C8135BE720889583002D3D26 /* CarBuilder.m in Sources */,

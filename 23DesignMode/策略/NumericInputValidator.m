@@ -7,7 +7,7 @@
 //
 
 #import "NumericInputValidator.h"
-
+static NSString * const InputValidationErrorDomain = @"InputValidationErrorDomain";
 @implementation NumericInputValidator
 - (BOOL) ValidateInput:(UITextField *)input error:(NSError **)error{
     NSError *regError =nil;

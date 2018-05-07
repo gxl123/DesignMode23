@@ -20,6 +20,11 @@
 #import "CustomTextField.h"
 #import "NumericInputValidator.h"
 #import "AlphaInputValidator.h"
+#import "Model1.h"
+#import "Model2.h"
+#import "Model1Adapter.h"
+#import "Model2Adapter.h"
+#import "ContentView.h"
 @interface ViewController ()
 
 @end
@@ -66,6 +71,53 @@
     //策略模式
     CustomTextField * tf = [[CustomTextField alloc]init];
     tf.inputValidator = [[NumericInputValidator alloc]init];//添加策略验证必须输入数字
+    
+///////////////////////////////////////////////////////////////////////////
+    //适配器
+    /*========================类适配器===========================*/
+    //第一个
+    Model1 *model1 = [[Model1 alloc]init];
+    model1.conntentStr  =  @"时间：10：32:12";
+    model1.imageName    =  @"shijian";
+    
+    Model1Adapter *model1Adapter = [[Model1Adapter alloc]initWithData:model1];
+    
+    ContentView *contentView = [[ContentView alloc]initWithFrame:CGRectMake(100, 100, 200, 20)];
+    [contentView loadData:model1Adapter];
+    [self.view addSubview:contentView];
+    //第二个
+    Model2 *model2  = [[Model2 alloc]init];
+    model2.conntentStr =  @"心率：100次";
+    model2.image       =  [UIImage imageNamed:@"mapHeaderIcon"];
+    
+    Model2Adapter *modelAdapter2 = [[Model2Adapter alloc]initWithData:model2];
+    
+    ContentView *contentView1 = [[ContentView alloc]initWithFrame:CGRectMake(100, 200, 200, 20)];
+    [contentView1 loadData:modelAdapter2];
+    [self.view addSubview:contentView1];
+    
+    /*========================对象适配器===========================*/
+    
+    Model2 *model3  = [[Model2 alloc]init];
+    model3.conntentStr =  @"心率：100次";
+    model3.image       =  [UIImage imageNamed:@"mapHeaderIcon"];
+    
+    ContentViewAdapter *modelAdapter3 = [[ModelAdapter alloc]initWithData:model3];
+    
+    ContentView *contentView3 = [[ContentView alloc]initWithFrame:CGRectMake(100, 300, 200, 20)];
+    [contentView3 loadData:modelAdapter3];
+    [self.view addSubview:contentView3];
+    
+    Model1 *model4 = [[Model1 alloc]init];
+    model4.conntentStr  =  @"时间：10：32:12";
+    model4.imageName    =  @"shijian";
+    
+    ContentViewAdapter *modelAdapter4 = [[ModelAdapter alloc]initWithData:model4];
+    
+    ContentView *contentView4 = [[ContentView alloc]initWithFrame:CGRectMake(100, 400, 200, 20)];
+    [contentView4 loadData:modelAdapter4];
+    [self.view addSubview:contentView4];
+ // // // /////////////////////////////////////////////////////////////////////////////////////////////////////
     
 }
 
