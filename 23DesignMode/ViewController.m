@@ -26,10 +26,7 @@
 #import "Model2Adapter.h"
 #import "ContentView.h"
 #import "BrandsProtocol.h"
-//#import "IPhone.h"
-//#import "Samsung.h"
-//#import "QQ.h"
-//#import "Weixin.h"
+#import "LH4SWaiter.h"
 @interface ViewController ()
 
 @end
@@ -129,6 +126,13 @@
     id<BrandsProtocol> brands = [[NSClassFromString(@"IPhone") alloc]init];
     brands.soft =  [[NSClassFromString(@"QQ") alloc]init];
     [brands showBrandsName];
+    
+    //外观模式
+    LH4SWaiter* _waiter = [[LH4SWaiter alloc] init];
+    // 现金买车
+    [_waiter buyCarWithCash];
+    // 贷款买车
+    [_waiter buyCarWithLoad];
     
 }
 

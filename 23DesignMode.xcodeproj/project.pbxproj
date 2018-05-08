@@ -39,6 +39,10 @@
 		C83E633920A13E730099AE0B /* Samsung.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E633820A13E730099AE0B /* Samsung.m */; };
 		C83E633E20A140330099AE0B /* QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E633D20A140330099AE0B /* QQ.m */; };
 		C83E634120A140450099AE0B /* Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634020A140450099AE0B /* Weixin.m */; };
+		C83E634520A147640099AE0B /* LHFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634420A147640099AE0B /* LHFinance.m */; };
+		C83E634820A147850099AE0B /* LHSales.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634720A147850099AE0B /* LHSales.m */; };
+		C83E634B20A147A60099AE0B /* LHService.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634A20A147A60099AE0B /* LHService.m */; };
+		C83E634E20A1480C0099AE0B /* LH4SWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634D20A1480C0099AE0B /* LH4SWaiter.m */; };
 		C85493DE20945C6D0092A79C /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493DD20945C6D0092A79C /* InputValidator.m */; };
 		C85493E120945C920092A79C /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E020945C920092A79C /* NumericInputValidator.m */; };
 		C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E320945CAC0092A79C /* AlphaInputValidator.m */; };
@@ -116,6 +120,14 @@
 		C83E633D20A140330099AE0B /* QQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQ.m; sourceTree = "<group>"; };
 		C83E633F20A140450099AE0B /* Weixin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weixin.h; sourceTree = "<group>"; };
 		C83E634020A140450099AE0B /* Weixin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weixin.m; sourceTree = "<group>"; };
+		C83E634320A147640099AE0B /* LHFinance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHFinance.h; sourceTree = "<group>"; };
+		C83E634420A147640099AE0B /* LHFinance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHFinance.m; sourceTree = "<group>"; };
+		C83E634620A147850099AE0B /* LHSales.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHSales.h; sourceTree = "<group>"; };
+		C83E634720A147850099AE0B /* LHSales.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSales.m; sourceTree = "<group>"; };
+		C83E634920A147A60099AE0B /* LHService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHService.h; sourceTree = "<group>"; };
+		C83E634A20A147A60099AE0B /* LHService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHService.m; sourceTree = "<group>"; };
+		C83E634C20A1480C0099AE0B /* LH4SWaiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LH4SWaiter.h; sourceTree = "<group>"; };
+		C83E634D20A1480C0099AE0B /* LH4SWaiter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LH4SWaiter.m; sourceTree = "<group>"; };
 		C85493DC20945C6D0092A79C /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
 		C85493DD20945C6D0092A79C /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
 		C85493DF20945C920092A79C /* NumericInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
@@ -166,6 +178,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C83E634220A147380099AE0B /* 外观 */,
 				C83E633120A13D330099AE0B /* 桥接 */,
 				C8399C1A209FF52A003D6F86 /* 适配器 */,
 				C85493DB20945C390092A79C /* 策略 */,
@@ -282,6 +295,21 @@
 				C83E634020A140450099AE0B /* Weixin.m */,
 			);
 			path = "桥接";
+			sourceTree = "<group>";
+		};
+		C83E634220A147380099AE0B /* 外观 */ = {
+			isa = PBXGroup;
+			children = (
+				C83E634C20A1480C0099AE0B /* LH4SWaiter.h */,
+				C83E634D20A1480C0099AE0B /* LH4SWaiter.m */,
+				C83E634320A147640099AE0B /* LHFinance.h */,
+				C83E634420A147640099AE0B /* LHFinance.m */,
+				C83E634620A147850099AE0B /* LHSales.h */,
+				C83E634720A147850099AE0B /* LHSales.m */,
+				C83E634920A147A60099AE0B /* LHService.h */,
+				C83E634A20A147A60099AE0B /* LHService.m */,
+			);
+			path = "外观";
 			sourceTree = "<group>";
 		};
 		C85493DB20945C390092A79C /* 策略 */ = {
@@ -406,19 +434,23 @@
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
 				C83E633E20A140330099AE0B /* QQ.m in Sources */,
 				C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */,
+				C83E634E20A1480C0099AE0B /* LH4SWaiter.m in Sources */,
 				C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */,
 				C8135BB820887944002D3D26 /* main.m in Sources */,
 				C81CD5882089819B00308D99 /* LightningAttack.m in Sources */,
 				C83E634120A140450099AE0B /* Weixin.m in Sources */,
+				C83E634820A147850099AE0B /* LHSales.m in Sources */,
 				C8135BE720889583002D3D26 /* CarBuilder.m in Sources */,
 				C81CD57C208980E800308D99 /* Avator.m in Sources */,
 				C85641C7208F14EA004D0496 /* Mediator.m in Sources */,
 				C83E633620A13E590099AE0B /* IPhone.m in Sources */,
+				C83E634520A147640099AE0B /* LHFinance.m in Sources */,
 				C8135BE620889583002D3D26 /* Car.m in Sources */,
 				C8135BE920889583002D3D26 /* SuvCarBuilder.m in Sources */,
 				C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */,
 				C81CD579208980B400308D99 /* CrystalShield.m in Sources */,
 				C8135BAA20887941002D3D26 /* AppDelegate.m in Sources */,
+				C83E634B20A147A60099AE0B /* LHService.m in Sources */,
 				C81CD5852089818100308D99 /* MagicFireAttack.m in Sources */,
 				C8135BE520889583002D3D26 /* HondaFactory.m in Sources */,
 				C81CD5822089816C00308D99 /* SwordAttack.m in Sources */,
