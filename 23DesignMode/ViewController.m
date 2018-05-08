@@ -25,6 +25,11 @@
 #import "Model1Adapter.h"
 #import "Model2Adapter.h"
 #import "ContentView.h"
+#import "BrandsProtocol.h"
+//#import "IPhone.h"
+//#import "Samsung.h"
+//#import "QQ.h"
+//#import "Weixin.h"
 @interface ViewController ()
 
 @end
@@ -118,6 +123,12 @@
     [contentView4 loadData:modelAdapter4];
     [self.view addSubview:contentView4];
  // // // /////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    //桥接
+    id<BrandsProtocol> brands = [[NSClassFromString(@"IPhone") alloc]init];
+    brands.soft =  [[NSClassFromString(@"QQ") alloc]init];
+    [brands showBrandsName];
     
 }
 

@@ -35,6 +35,10 @@
 		C8399C2D209FF9D6003D6F86 /* Model1.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C2C209FF9D6003D6F86 /* Model1.m */; };
 		C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C2F209FFDB7003D6F86 /* ContentView.m */; };
 		C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C3320A00027003D6F86 /* ContentViewAdapter.m */; };
+		C83E633620A13E590099AE0B /* IPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E633520A13E590099AE0B /* IPhone.m */; };
+		C83E633920A13E730099AE0B /* Samsung.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E633820A13E730099AE0B /* Samsung.m */; };
+		C83E633E20A140330099AE0B /* QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E633D20A140330099AE0B /* QQ.m */; };
+		C83E634120A140450099AE0B /* Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E634020A140450099AE0B /* Weixin.m */; };
 		C85493DE20945C6D0092A79C /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493DD20945C6D0092A79C /* InputValidator.m */; };
 		C85493E120945C920092A79C /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E020945C920092A79C /* NumericInputValidator.m */; };
 		C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85493E320945CAC0092A79C /* AlphaInputValidator.m */; };
@@ -102,6 +106,16 @@
 		C8399C2F209FFDB7003D6F86 /* ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
 		C8399C3220A00027003D6F86 /* ContentViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewAdapter.h; sourceTree = "<group>"; };
 		C8399C3320A00027003D6F86 /* ContentViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewAdapter.m; sourceTree = "<group>"; };
+		C83E633420A13E590099AE0B /* IPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhone.h; sourceTree = "<group>"; };
+		C83E633520A13E590099AE0B /* IPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPhone.m; sourceTree = "<group>"; };
+		C83E633720A13E730099AE0B /* Samsung.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Samsung.h; sourceTree = "<group>"; };
+		C83E633820A13E730099AE0B /* Samsung.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Samsung.m; sourceTree = "<group>"; };
+		C83E633A20A13F020099AE0B /* BrandsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandsProtocol.h; sourceTree = "<group>"; };
+		C83E633B20A13F150099AE0B /* SoftProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftProtocol.h; sourceTree = "<group>"; };
+		C83E633C20A140330099AE0B /* QQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQ.h; sourceTree = "<group>"; };
+		C83E633D20A140330099AE0B /* QQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQ.m; sourceTree = "<group>"; };
+		C83E633F20A140450099AE0B /* Weixin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weixin.h; sourceTree = "<group>"; };
+		C83E634020A140450099AE0B /* Weixin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weixin.m; sourceTree = "<group>"; };
 		C85493DC20945C6D0092A79C /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
 		C85493DD20945C6D0092A79C /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
 		C85493DF20945C920092A79C /* NumericInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
@@ -152,6 +166,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C83E633120A13D330099AE0B /* 桥接 */,
 				C8399C1A209FF52A003D6F86 /* 适配器 */,
 				C85493DB20945C390092A79C /* 策略 */,
 				C85641BB208F1209004D0496 /* 中介者 */,
@@ -250,6 +265,23 @@
 				C8399C2F209FFDB7003D6F86 /* ContentView.m */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		C83E633120A13D330099AE0B /* 桥接 */ = {
+			isa = PBXGroup;
+			children = (
+				C83E633A20A13F020099AE0B /* BrandsProtocol.h */,
+				C83E633420A13E590099AE0B /* IPhone.h */,
+				C83E633520A13E590099AE0B /* IPhone.m */,
+				C83E633720A13E730099AE0B /* Samsung.h */,
+				C83E633820A13E730099AE0B /* Samsung.m */,
+				C83E633B20A13F150099AE0B /* SoftProtocol.h */,
+				C83E633C20A140330099AE0B /* QQ.h */,
+				C83E633D20A140330099AE0B /* QQ.m */,
+				C83E633F20A140450099AE0B /* Weixin.h */,
+				C83E634020A140450099AE0B /* Weixin.m */,
+			);
+			path = "桥接";
 			sourceTree = "<group>";
 		};
 		C85493DB20945C390092A79C /* 策略 */ = {
@@ -360,6 +392,7 @@
 				C8399C1E209FF616003D6F86 /* Model2.m in Sources */,
 				C85641C1208F14B8004D0496 /* WRReviewViewController.m in Sources */,
 				C8135BE420889583002D3D26 /* FitHondaFactory.m in Sources */,
+				C83E633920A13E730099AE0B /* Samsung.m in Sources */,
 				C8135BE320889583002D3D26 /* AccordHondaFactory.m in Sources */,
 				C81CD5732089803000308D99 /* AttackHandler.m in Sources */,
 				C8135BE820889583002D3D26 /* CarDirector.m in Sources */,
@@ -371,13 +404,16 @@
 				C8399C2A209FF7E1003D6F86 /* Model1Adapter.m in Sources */,
 				C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */,
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
+				C83E633E20A140330099AE0B /* QQ.m in Sources */,
 				C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */,
 				C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */,
 				C8135BB820887944002D3D26 /* main.m in Sources */,
 				C81CD5882089819B00308D99 /* LightningAttack.m in Sources */,
+				C83E634120A140450099AE0B /* Weixin.m in Sources */,
 				C8135BE720889583002D3D26 /* CarBuilder.m in Sources */,
 				C81CD57C208980E800308D99 /* Avator.m in Sources */,
 				C85641C7208F14EA004D0496 /* Mediator.m in Sources */,
+				C83E633620A13E590099AE0B /* IPhone.m in Sources */,
 				C8135BE620889583002D3D26 /* Car.m in Sources */,
 				C8135BE920889583002D3D26 /* SuvCarBuilder.m in Sources */,
 				C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */,
