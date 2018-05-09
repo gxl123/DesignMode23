@@ -27,6 +27,10 @@
 #import "ContentView.h"
 #import "BrandsProtocol.h"
 #import "LH4SWaiter.h"
+#import "NissanCar.h"
+#import "Wheel.h"
+#import "Engine.h"
+#import "ComponentsRepairVisitor.h"
 @interface ViewController ()
 
 @end
@@ -133,6 +137,25 @@
     [_waiter buyCarWithCash];
     // 贷款买车
     [_waiter buyCarWithLoad];
+    
+    
+    //访问者
+    NissanCar *myCar = [[NissanCar alloc]init];
+    Engine *engine = [[Engine alloc]initWithModelName:@"V8"];
+    Wheel *wheelA = [[Wheel alloc]init];
+    Wheel *wheelB = [[Wheel alloc]init];
+    Wheel *wheelC = [[Wheel alloc]init];
+    Wheel *wheelD = [[Wheel alloc]init];
+    myCar.engine = engine;
+    [myCar addWheel:wheelA atIndex:0];
+    [myCar addWheel:wheelA atIndex:1];
+    [myCar addWheel:wheelA atIndex:2];
+    [myCar addWheel:wheelA atIndex:3];
+    NSLog(@"myCar:%@",myCar);
+    
+    //对组件进行维修
+    ComponentsRepairVisitor *cRepairVisitor = [[ComponentsRepairVisitor alloc] init];
+    [myCar appceptComponentVisitor:cRepairVisitor];
     
 }
 

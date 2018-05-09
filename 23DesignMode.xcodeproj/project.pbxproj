@@ -28,6 +28,11 @@
 		C81CD5822089816C00308D99 /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5812089816C00308D99 /* SwordAttack.m */; };
 		C81CD5852089818100308D99 /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5842089818100308D99 /* MagicFireAttack.m */; };
 		C81CD5882089819B00308D99 /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = C81CD5872089819B00308D99 /* LightningAttack.m */; };
+		C8332D0020A29A08006094D2 /* NissanCar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8332CFF20A29A07006094D2 /* NissanCar.m */; };
+		C8332D0320A29A21006094D2 /* Wheel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8332D0220A29A21006094D2 /* Wheel.m */; };
+		C8332D0620A29A3D006094D2 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = C8332D0520A29A3D006094D2 /* Engine.m */; };
+		C8332D0A20A29E49006094D2 /* ComponentsRepairVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8332D0920A29E49006094D2 /* ComponentsRepairVisitor.m */; };
+		C8332D0D20A29E6E006094D2 /* ComponentsUpgradeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8332D0C20A29E6E006094D2 /* ComponentsUpgradeVisitor.m */; };
 		C8399C1E209FF616003D6F86 /* Model2.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C1D209FF616003D6F86 /* Model2.m */; };
 		C8399C21209FF64A003D6F86 /* Model2Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C20209FF64A003D6F86 /* Model2Adapter.m */; };
 		C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8399C23209FF6D2003D6F86 /* ModelAdapter.m */; };
@@ -95,6 +100,17 @@
 		C81CD5842089818100308D99 /* MagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
 		C81CD5862089819B00308D99 /* LightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
 		C81CD5872089819B00308D99 /* LightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		C8332CFE20A29A07006094D2 /* NissanCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NissanCar.h; sourceTree = "<group>"; };
+		C8332CFF20A29A07006094D2 /* NissanCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NissanCar.m; sourceTree = "<group>"; };
+		C8332D0120A29A21006094D2 /* Wheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wheel.h; sourceTree = "<group>"; };
+		C8332D0220A29A21006094D2 /* Wheel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheel.m; sourceTree = "<group>"; };
+		C8332D0420A29A3D006094D2 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		C8332D0520A29A3D006094D2 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		C8332D0720A29BBA006094D2 /* ComponentsVisitProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentsVisitProtocol.h; sourceTree = "<group>"; };
+		C8332D0820A29E49006094D2 /* ComponentsRepairVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentsRepairVisitor.h; sourceTree = "<group>"; };
+		C8332D0920A29E49006094D2 /* ComponentsRepairVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentsRepairVisitor.m; sourceTree = "<group>"; };
+		C8332D0B20A29E6E006094D2 /* ComponentsUpgradeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentsUpgradeVisitor.h; sourceTree = "<group>"; };
+		C8332D0C20A29E6E006094D2 /* ComponentsUpgradeVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentsUpgradeVisitor.m; sourceTree = "<group>"; };
 		C8399C1B209FF569003D6F86 /* ContentViewAdapterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewAdapterProtocol.h; sourceTree = "<group>"; };
 		C8399C1C209FF616003D6F86 /* Model2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model2.h; sourceTree = "<group>"; };
 		C8399C1D209FF616003D6F86 /* Model2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model2.m; sourceTree = "<group>"; };
@@ -178,6 +194,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C8332CFD20A299DD006094D2 /* 访问者 */,
 				C83E634220A147380099AE0B /* 外观 */,
 				C83E633120A13D330099AE0B /* 桥接 */,
 				C8399C1A209FF52A003D6F86 /* 适配器 */,
@@ -248,6 +265,24 @@
 				C81CD5872089819B00308D99 /* LightningAttack.m */,
 			);
 			path = "责任链";
+			sourceTree = "<group>";
+		};
+		C8332CFD20A299DD006094D2 /* 访问者 */ = {
+			isa = PBXGroup;
+			children = (
+				C8332CFE20A29A07006094D2 /* NissanCar.h */,
+				C8332CFF20A29A07006094D2 /* NissanCar.m */,
+				C8332D0120A29A21006094D2 /* Wheel.h */,
+				C8332D0220A29A21006094D2 /* Wheel.m */,
+				C8332D0420A29A3D006094D2 /* Engine.h */,
+				C8332D0520A29A3D006094D2 /* Engine.m */,
+				C8332D0720A29BBA006094D2 /* ComponentsVisitProtocol.h */,
+				C8332D0820A29E49006094D2 /* ComponentsRepairVisitor.h */,
+				C8332D0920A29E49006094D2 /* ComponentsRepairVisitor.m */,
+				C8332D0B20A29E6E006094D2 /* ComponentsUpgradeVisitor.h */,
+				C8332D0C20A29E6E006094D2 /* ComponentsUpgradeVisitor.m */,
+			);
+			path = "访问者";
 			sourceTree = "<group>";
 		};
 		C8399C1A209FF52A003D6F86 /* 适配器 */ = {
@@ -425,11 +460,13 @@
 				C81CD5732089803000308D99 /* AttackHandler.m in Sources */,
 				C8135BE820889583002D3D26 /* CarDirector.m in Sources */,
 				C85493E120945C920092A79C /* NumericInputValidator.m in Sources */,
+				C8332D0D20A29E6E006094D2 /* ComponentsUpgradeVisitor.m in Sources */,
 				C8399C21209FF64A003D6F86 /* Model2Adapter.m in Sources */,
 				C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */,
 				C85641CA208F214B004D0496 /* BookDetailComponent.m in Sources */,
 				C81CD5762089804F00308D99 /* MetalArmor.m in Sources */,
 				C8399C2A209FF7E1003D6F86 /* Model1Adapter.m in Sources */,
+				C8332D0020A29A08006094D2 /* NissanCar.m in Sources */,
 				C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */,
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
 				C83E633E20A140330099AE0B /* QQ.m in Sources */,
@@ -442,12 +479,15 @@
 				C83E634820A147850099AE0B /* LHSales.m in Sources */,
 				C8135BE720889583002D3D26 /* CarBuilder.m in Sources */,
 				C81CD57C208980E800308D99 /* Avator.m in Sources */,
+				C8332D0620A29A3D006094D2 /* Engine.m in Sources */,
 				C85641C7208F14EA004D0496 /* Mediator.m in Sources */,
 				C83E633620A13E590099AE0B /* IPhone.m in Sources */,
 				C83E634520A147640099AE0B /* LHFinance.m in Sources */,
 				C8135BE620889583002D3D26 /* Car.m in Sources */,
 				C8135BE920889583002D3D26 /* SuvCarBuilder.m in Sources */,
 				C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */,
+				C8332D0320A29A21006094D2 /* Wheel.m in Sources */,
+				C8332D0A20A29E49006094D2 /* ComponentsRepairVisitor.m in Sources */,
 				C81CD579208980B400308D99 /* CrystalShield.m in Sources */,
 				C8135BAA20887941002D3D26 /* AppDelegate.m in Sources */,
 				C83E634B20A147A60099AE0B /* LHService.m in Sources */,
