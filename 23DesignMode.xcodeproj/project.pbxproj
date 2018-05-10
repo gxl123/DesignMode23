@@ -57,6 +57,11 @@
 		C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641C3208F14C9004D0496 /* WRBookDetailViewController.m */; };
 		C85641C7208F14EA004D0496 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641C6208F14EA004D0496 /* Mediator.m */; };
 		C85641CA208F214B004D0496 /* BookDetailComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C85641C9208F214B004D0496 /* BookDetailComponent.m */; };
+		C882398420A3DF7E00E8534D /* TestCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C882398320A3DF7E00E8534D /* TestCommandViewController.m */; };
+		C882398720A3DFCA00E8534D /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = C882398620A3DFCA00E8534D /* Receiver.m */; };
+		C882398A20A3DFF400E8534D /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = C882398920A3DFF400E8534D /* Invoker.m */; };
+		C882398D20A3E01E00E8534D /* LighterCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C882398C20A3E01E00E8534D /* LighterCommand.m */; };
+		C882399020A3E03100E8534D /* DarkerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C882398F20A3E03100E8534D /* DarkerCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +167,18 @@
 		C85641C6208F14EA004D0496 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
 		C85641C8208F214B004D0496 /* BookDetailComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookDetailComponent.h; sourceTree = "<group>"; };
 		C85641C9208F214B004D0496 /* BookDetailComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookDetailComponent.m; sourceTree = "<group>"; };
+		C882398220A3DF7E00E8534D /* TestCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCommandViewController.h; sourceTree = "<group>"; };
+		C882398320A3DF7E00E8534D /* TestCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCommandViewController.m; sourceTree = "<group>"; };
+		C882398520A3DFCA00E8534D /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		C882398620A3DFCA00E8534D /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		C882398820A3DFF400E8534D /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		C882398920A3DFF400E8534D /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		C882398B20A3E01E00E8534D /* LighterCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LighterCommand.h; sourceTree = "<group>"; };
+		C882398C20A3E01E00E8534D /* LighterCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LighterCommand.m; sourceTree = "<group>"; };
+		C882398E20A3E03100E8534D /* DarkerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkerCommand.h; sourceTree = "<group>"; };
+		C882398F20A3E03100E8534D /* DarkerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkerCommand.m; sourceTree = "<group>"; };
+		C882399120A3E05500E8534D /* InvokerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvokerProtocol.h; sourceTree = "<group>"; };
+		C882399220A3E1F000E8534D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +211,7 @@
 		C8135BA720887941002D3D26 /* 23DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				C882398120A3DF4200E8534D /* 命令 */,
 				C8332CFD20A299DD006094D2 /* 访问者 */,
 				C83E634220A147380099AE0B /* 外观 */,
 				C83E633120A13D330099AE0B /* 桥接 */,
@@ -379,6 +397,25 @@
 			path = "中介者";
 			sourceTree = "<group>";
 		};
+		C882398120A3DF4200E8534D /* 命令 */ = {
+			isa = PBXGroup;
+			children = (
+				C882399220A3E1F000E8534D /* Singleton.h */,
+				C882398220A3DF7E00E8534D /* TestCommandViewController.h */,
+				C882398320A3DF7E00E8534D /* TestCommandViewController.m */,
+				C882398520A3DFCA00E8534D /* Receiver.h */,
+				C882398620A3DFCA00E8534D /* Receiver.m */,
+				C882399120A3E05500E8534D /* InvokerProtocol.h */,
+				C882398820A3DFF400E8534D /* Invoker.h */,
+				C882398920A3DFF400E8534D /* Invoker.m */,
+				C882398B20A3E01E00E8534D /* LighterCommand.h */,
+				C882398C20A3E01E00E8534D /* LighterCommand.m */,
+				C882398E20A3E03100E8534D /* DarkerCommand.h */,
+				C882398F20A3E03100E8534D /* DarkerCommand.m */,
+			);
+			path = "命令";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,6 +492,8 @@
 				C8399C1E209FF616003D6F86 /* Model2.m in Sources */,
 				C85641C1208F14B8004D0496 /* WRReviewViewController.m in Sources */,
 				C8135BE420889583002D3D26 /* FitHondaFactory.m in Sources */,
+				C882399020A3E03100E8534D /* DarkerCommand.m in Sources */,
+				C882398D20A3E01E00E8534D /* LighterCommand.m in Sources */,
 				C83E633920A13E730099AE0B /* Samsung.m in Sources */,
 				C8135BE320889583002D3D26 /* AccordHondaFactory.m in Sources */,
 				C81CD5732089803000308D99 /* AttackHandler.m in Sources */,
@@ -463,6 +502,7 @@
 				C8332D0D20A29E6E006094D2 /* ComponentsUpgradeVisitor.m in Sources */,
 				C8399C21209FF64A003D6F86 /* Model2Adapter.m in Sources */,
 				C85493E420945CAC0092A79C /* AlphaInputValidator.m in Sources */,
+				C882398720A3DFCA00E8534D /* Receiver.m in Sources */,
 				C85641CA208F214B004D0496 /* BookDetailComponent.m in Sources */,
 				C81CD5762089804F00308D99 /* MetalArmor.m in Sources */,
 				C8399C2A209FF7E1003D6F86 /* Model1Adapter.m in Sources */,
@@ -470,6 +510,7 @@
 				C8399C24209FF6D2003D6F86 /* ModelAdapter.m in Sources */,
 				C81CD57F2089814100308D99 /* Attack.m in Sources */,
 				C83E633E20A140330099AE0B /* QQ.m in Sources */,
+				C882398A20A3DFF400E8534D /* Invoker.m in Sources */,
 				C8399C30209FFDB7003D6F86 /* ContentView.m in Sources */,
 				C83E634E20A1480C0099AE0B /* LH4SWaiter.m in Sources */,
 				C8399C3420A00027003D6F86 /* ContentViewAdapter.m in Sources */,
@@ -485,6 +526,7 @@
 				C83E634520A147640099AE0B /* LHFinance.m in Sources */,
 				C8135BE620889583002D3D26 /* Car.m in Sources */,
 				C8135BE920889583002D3D26 /* SuvCarBuilder.m in Sources */,
+				C882398420A3DF7E00E8534D /* TestCommandViewController.m in Sources */,
 				C85641C4208F14C9004D0496 /* WRBookDetailViewController.m in Sources */,
 				C8332D0320A29A21006094D2 /* Wheel.m in Sources */,
 				C8332D0A20A29E49006094D2 /* ComponentsRepairVisitor.m in Sources */,

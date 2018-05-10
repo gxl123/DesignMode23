@@ -31,6 +31,7 @@
 #import "Wheel.h"
 #import "Engine.h"
 #import "ComponentsRepairVisitor.h"
+#import "TestCommandViewController.h"
 @interface ViewController ()
 
 @end
@@ -156,6 +157,10 @@
     //对组件进行维修
     ComponentsRepairVisitor *cRepairVisitor = [[ComponentsRepairVisitor alloc] init];
     [myCar appceptComponentVisitor:cRepairVisitor];
+    
+    //命令模式
+    TestCommandViewController * tcvc = [[TestCommandViewController alloc]init];
+    [self.navigationController pushViewController:tcvc animated:YES];
     
 }
 
